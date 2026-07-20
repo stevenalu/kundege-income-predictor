@@ -7,7 +7,7 @@ import pandas as pd
 from sklearn.metrics import mean_squared_error, r2_score
 
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = BASE_DIR / "best_model.pkl"
+MODEL_PATH = BASE_DIR / "../linear_regression/best_model.pkl"
 
 # load the saved bundle once at startup (model + scaler + column order)
 bundle = joblib.load(MODEL_PATH)
